@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+
+function store(){
+            a=document.getElementById('input').value;
+           localStorage.setItem('fdData', a);
+           a.value=" "
+           
+           
+          }
+      function load(){
+             var b =localStorage.getItem('fdData');
+             var c= document.getElementById("input");
+              c.innerHTML = b;
+
+
+      }
+    </script> -->
+</head>
+<body id="body"style="background-color: bisque;width:30%" onload="get()";>
+    <div style="background-color: black; margin-left:30%">
+        <div style="margin:10%; padding:30px;">
+        <h3>Todo list</h3>
+        <input id="input" type="text" value="56" oninput="store()">
+        <!-- <button onclick="store()">Add</button> -->
+        <button onclick="xyz()">Add</button>
+        <p style="color:red;"id="para"></p>
+    </div>
+    </div>
+    <script>
+      function xyz(){
+        document.getElementById('input').value=" ";
+      }
+        
+      function store(){
+                 
+                  a=document.getElementById('input').value;
+                  //console.log(typeof(a));
+                      localStorage.setItem('fdData', a);
+                      //document.getElementById('input').value=" ";
+                 
+                 
+                 
+                }
+                //window.onload = get();
+
+                 function get(){ 
+                  d=localStorage.getItem('fdData') ;
+                  if(d!==null){
+                    document.getElementById('input').value=d;
+
+                  }
+                 }
+                //  var z=document.getElementById("body");
+                //   alert(z);
+                  
+                 
+                
+            
+              // function retrieveInput() {
+              //       var b = localStorage.getItem('fdData');
+              //      var c= document.getElementById("input");
+              //       c.innerHTML = b;
+      
+      
+            //}
+          </script>
+    <!-- <script>
+         
+        
+          // window.onload;
+          //   var b =localStorage.getItem('fdData');
+          //   var c= document.getElementById("input");
+          //   c.innerHTML = b;
+
+
+          
+        
+          
+         
+
+    </script>
+     -->
+</body>
+</html>
